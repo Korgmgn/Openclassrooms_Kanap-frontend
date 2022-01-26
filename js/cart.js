@@ -269,7 +269,7 @@ function emailRegex(emailValue){
 //Envoi à l'API l'objet contenant les données du formulaire et un array contenant tous les id produit du panier
 function postOrder(order) {
     let orderId
-    fetch('http://localhost:3000/api/products/order', {
+    fetch('https://kanap-api.herokuapp.com/api/products/order', {
         method: "POST",
         headers: { 
     'Accept': 'application/json', 

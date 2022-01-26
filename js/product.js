@@ -7,7 +7,7 @@ let currentItem //On attribue les données renvoyées par l'API à cette variabl
 
 //Au chargement du contenu HTML, récupère les données du produit renvoyées par l'API en utilisant son id.
 document.addEventListener('DOMContentLoaded', function() {
-    fetch(`http://localhost:3000/api/products/${itemId}`)
+    fetch(`https://kanap-api.herokuapp.com/api/products/${itemId}`)
     .then(function(res) {
             if (res.ok) {
                 //console.log('SUCCESS')

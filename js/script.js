@@ -1,6 +1,6 @@
 //Au chargement du contenu HTML, récupère la liste de produits depuis l'API
 document.addEventListener('DOMContentLoaded', function() {
-    fetch('http://localhost:3000/api/products')
+    fetch('https://kanap-api.herokuapp.com/api/products')
     .then(function(res) {
             if (res.ok) {
                 console.log('SUCCESS')

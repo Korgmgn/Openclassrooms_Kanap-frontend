@@ -23,7 +23,7 @@ function usefetchResult(data) {
         const couch = data[i]
 
         const itemLink = document.createElement('a')
-        itemLink.setAttribute('href', `./product.html?id=${couch._id}`) // Créé le lien de chaque produit vers sa page respective en utilisant son id
+        itemLink.setAttribute('href', `./html/product.html?id=${couch._id}`) // Créé le lien de chaque produit vers sa page respective en utilisant son id
         listContainer.appendChild(itemLink)
 
         const itemCard = document.createElement('article')
